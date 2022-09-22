@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Оставить отзыв
+{% endblock title %}
+
+{% block body %}
+<div class="container py-3">
+  <h1>Оставить отзыв</h1>
+  <form method="post">
+    <input type="text" name="title" id="title" class="form-control" placeholder="Общая оценка(отлично,неплохо,ужасно)"><br>
+    <textarea name="intro" id="intro" class="form-control" placeholder="Тип работ(строительство,консультация)"></textarea><br>
+    <textarea name="text" id="text" class="form-control" placeholder="Полный комментарий"></textarea><br>
+    <input type="submit" class="btn btn-dark" value="Отправить">
+  </form>
+</div>
+{% endblock body%}
